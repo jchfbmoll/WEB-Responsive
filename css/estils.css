@@ -1,0 +1,556 @@
+* { /* Inicialitzam els margets i els farcits */
+
+    margin: 0;
+    padding:0;
+
+}
+
+@media  screen and (min-width: 1081px) and (max-width: 4160px) { /* Media query per pantalles majors de 1080pixels*/
+
+    body {/* Fons blanc*/
+
+        background-color: white;
+
+
+    }
+
+    header.capçalera { /* Deixam la capçalera fixa, i que ocupi tota la pantalla*/
+
+        display: block;
+        position: fixed;
+        width: 100vw;
+    }
+
+    header.capçalera nav.menunav{ /* Modificam el tamany i els colors del menu*/
+        background-color: #fcd12a; /*TUSCANY COLOR*/
+        height: 4vh;
+        border-bottom: 3px #8D021F solid;
+        z-index:9;
+
+    }
+
+    header.capçalera nav.menunav ul.menunavllist{ /* Seguim configuram el menu de navegació */
+
+        padding-top:1vh; 
+        display: flex;
+        justify-content: center;
+        box-sizing: border-box; 
+        left: 35vw;
+    }
+
+    header.capçalera nav.menunav ul.menunavllist li{  /* Modificam l'amplada dels camps del menú de navegació*/
+
+        
+        width: 7vw;
+
+        list-style-type: none;
+        
+    }
+
+    header.capçalera nav.menunav ul.menunavllist li.excursions{
+
+        margin-left: 2vw;
+
+    }
+
+    header.capçalera nav.menunav ul.menunavllist li.contacte{
+
+        margin-left: 3vw;
+
+    }
+    header.capçalera nav.menunav ul.menunavllist li.multimedia{
+
+        margin-left: 2vw;
+
+    }
+
+    header.capçalera nav.menunav ul.menunavllist li a{ /* Canviam els colors del enllaçpps */
+
+        color: #8D021F;
+        font-size: 22px;
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+    main{ /* Tamany de la font */
+ 
+
+        font-size:30px;
+    }
+
+
+    main.principal{ /*  Configuram el tamany d l'informació principal */
+        padding-top: 5vh;
+        padding-left: 10vw;
+        padding-right: 10vw;
+
+        color: black;
+        font-weight: bold;
+
+
+    }
+
+    main.principal p#title{ /* Configuram el títol dela pàgina */
+        position: relative;
+        top: -4vh;
+        text-align: center;
+        z-index:-1;
+        
+
+    }
+
+
+    main.principal#tarifes{ /* Configuram el camp pricipal de la pàgina de les tarifes*/
+        padding-top: 5vh;
+        padding-left: 5vw;
+        color: black;
+        font-weight: bold;
+        text-align: center;
+
+
+    }
+
+    main.principal table#tarifes { /* Configuram la taula de tarifes*/
+        margin: 0 auto;
+        width: 40vw;
+        border: 3px black solid;
+        border-collapse: collapse;
+
+    }
+
+
+
+    main.principal table#tarifes tr{  
+
+        border: 1px black solid;
+        height: 5vh;
+        font-size: 2vh;
+
+    }
+
+    main.principal table#tarifes tr.first{
+
+        border-bottom-width: 3px;
+    }
+
+    main.principal table#tarifes tr.first td{
+
+        border-left-width: 3px;
+    }
+
+    main.principal table#tarifes tr td{ 
+
+        border: 1px black solid;
+
+    }
+    
+    main.principal address { /* Convertim l'element <address> a inline enlloc d'element de block */
+
+        display: inline;
+
+    }
+
+    main.principal div#excursio1{ /* Configuram els diferents elements semàntics dins la pàgina d'excursions */
+
+        display: flex;
+        margin-bottom: 5vh;
+    }
+    main.principal div#excursio1 div.columna1{ /* Feim que per cada excursió, primer aparegui el títol, davall d'ell la descripció
+        i al seu costat una imatge relacionada amb l'excursió*/
+
+        display: flex;
+        flex-direction: column;
+        margin-right: 3vw;
+
+    }
+    main.principal div#excursio1 h2{
+
+
+        color:#8D021F;
+        font-style: italic;
+        height:2vw;
+    }
+    main.principal div#excursio1 p#excursio1{
+        margin-top: 1vw;
+        height: 8vw;
+
+        text-align: justify;
+    }
+
+    main.principal div#excursio1 img {
+
+        width: 12.5vw;
+        height: 10vw;
+    }
+    
+    main.principal div#excursio2{
+        display: inline-flex;
+        margin-bottom: 5vh;
+        
+    }
+    main.principal div#excursio2 div.columna2{
+
+        display: flex;
+        flex-direction: column;
+        margin-left: 3vw;
+
+    }
+    main.principal div#excursio2 h2{
+
+
+        color:#8D021F;
+        font-style: italic;
+        height:2vw;
+    }
+    main.principal div#excursio2 p#excursio2{
+        margin-top: 1vw;
+
+        height: 16vw;
+        text-align: justify;
+    }
+    main.principal div#excursio2 img {
+
+        width: 11vw;
+        height: 16vw;
+
+    }
+    main.principal div#excursio3{
+
+        display: inline-flex;
+        margin-bottom: 5vh;
+    }
+    main.principal div#excursio3 div.columna1{
+
+        display: flex;
+        flex-direction: column;
+        margin-right: 3vw;
+        margin-bottom: 5vw;
+
+    }
+    main.principal div#excursio3 h2{
+
+
+        color:#8D021F;
+        font-style: italic;
+        height:2vw;
+    }
+    main.principal div#excursio3 p#excursio3{
+        margin-top: 1vw;
+
+        height:10vw;
+        text-align: justify;
+    }
+    main.principal div#excursio3 img {
+
+        width: 14vw;
+        height: 10vw;
+
+    }
+
+    main.principal#multimedia{ /*Configuram la pàgina de multimèdia i el tamany dels vídeos */
+
+
+        text-align: center;
+   
+    }
+
+    main.principal#multimedia iframe{
+
+
+        width:1280px; 
+        height:720px;
+
+    }
+
+
+    footer.peu{ /* Configuram el peu de pàgina*/
+        display: block;
+        position: fixed;
+        bottom:0;
+        background-color: #fcd12a;
+        margin-top: 10vh;   
+        padding-top: 3vh;
+        padding-left: 10vw;
+        padding-right: 10vw;
+        width: 100vw;
+        box-sizing: border-box;
+        height: 10vh;
+        color: #8D021F;
+        font-weight: bold;
+        border-top: #8D021F 3px solid;
+        
+
+        
+    }
+}
+
+
+@media  screen and  (max-width: 1080px) { /* Feim lo mateix que abans però per pantalles menors de 1080pixels d'amplada, mòbils principalment*/
+    /* La majoria de camps són iguals, només es canvien alguns elements per a que desapareixquin com les imatges de la pàgina d'excursions
+    i l'amplada dels diferents camps del menú de navegació*/
+
+    body {
+
+        background-color: white;
+
+
+    }
+
+    header.capçalera {
+
+        display: block;
+        position: fixed;
+        width: 100vw;
+    }
+
+    header.capçalera nav.menunav{
+
+        background-color: #fcd12a; /*TUSCANY COLOR*/
+        height: 4vh;
+        border-bottom: 3px #8D021F solid;
+        padding-left: 2vw;
+        padding-right: 2vw;
+        z-index:9;
+
+    }
+
+    header.capçalera nav.menunav ul.menunavllist{
+
+        padding-top:1vh;
+        display: flex;
+        justify-content: center;
+        box-sizing: border-box; 
+    }
+
+    header.capçalera nav.menunav ul.menunavllist li{
+
+        
+        width: 20vw;
+        
+        list-style-type: none;
+        
+    }
+    header.capçalera nav.menunav ul.menunavllist li.contacte{
+
+        
+        padding-left:5vw;
+        
+    }
+
+    header.capçalera nav.menunav ul.menunavllist li a{
+
+        color: #8D021F;
+        font-size: 22px;
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+    main{
+
+
+        font-size:30px;
+    }
+
+
+    main.principal{
+        padding-top: 5vh;
+        padding-left: 10vw;
+        padding-right: 10vw;
+
+        color: black;
+        font-weight: bold;
+
+
+    }
+
+    main.principal p#title{
+        position: relative;
+        top: 2vh;
+        text-align: center;
+        z-index:1;
+        
+        
+    }
+
+    main.principal p#title img{
+
+        width: 80vw;
+        height: 15vw;
+    }
+
+
+    main.principal#tarifes{
+        padding-top: 5vh;
+        padding-left: 5vw;
+        color: black;
+        font-weight: bold;
+        text-align: center;
+
+
+    }
+
+    main.principal table#tarifes {
+        margin: 0 auto;
+        width: 40vw;
+        border: 3px black solid;
+        border-collapse: collapse;
+
+    }
+
+
+
+    main.principal table#tarifes tr{
+
+        border: 1px black solid;
+        height: 5vh;
+        font-size: 2vh;
+
+    }
+
+    main.principal table#tarifes tr.first{
+
+        border-bottom-width: 3px;
+    }
+
+    main.principal table#tarifes tr.first td{
+
+        border-left-width: 3px;
+    }
+
+    main.principal table#tarifes tr td{ 
+
+        border: 1px black solid;
+
+    }
+    
+    main.principal address {
+
+        display: inline;
+
+    }
+
+    main.principal div#excursio1{
+
+        display: flex;
+        margin-bottom: 2vh;
+    }
+    main.principal div#excursio1 div.columna1{
+
+        display: flex;
+        flex-direction: column;
+        
+
+    }
+
+    main.principal div#excursio1 h2{
+
+        font-size: 1.2em;
+        color:#8D021F;
+        font-style: italic;
+    }
+    main.principal div#excursio1 p#excursio1{
+        margin-top: 2vw;
+        font-size: 1em;
+
+        text-align: justify;
+    }
+
+    main.principal div#excursio1 div.columna2{
+        display: none;
+
+    }
+    
+    main.principal div#excursio2{
+        display: inline-flex;
+        margin-bottom: 2vh;
+        
+    }
+    main.principal div#excursio2 div.columna1{
+        display: none;
+
+    }
+    main.principal div#excursio2 div.columna2{
+
+        display: flex;
+        flex-direction: column;
+
+    }
+    main.principal div#excursio2 h2{
+
+        font-size: 1.2em;
+
+        color:#8D021F;
+        font-style: italic;
+    }
+    main.principal div#excursio2 p#excursio2{
+        margin-top: 2vw;
+        font-size: 1em;
+
+        text-align: justify;
+    }
+
+    main.principal div#excursio3{
+
+        display: inline-flex;
+        margin-bottom: 5vh;
+    }
+    main.principal div#excursio3 div.columna1{
+
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10vw;
+
+    }
+    main.principal div#excursio3 h2{
+
+        font-size: 1.2em;
+
+        color:#8D021F;
+        font-style: italic;
+    }
+    main.principal div#excursio3 p#excursio3{
+        margin-top: 2vw;
+        font-size: 1em;
+
+        text-align: justify;
+    }
+    main.principal div#excursio3 div.columna2{
+        display: none;
+
+    }
+
+    main.principal#multimedia{
+
+
+        text-align: center;
+    }
+
+    main.principal#multimedia iframe{
+
+
+        width:427px; 
+        height:240px;
+
+    }
+
+
+    footer.peu{
+        display: block;
+        position: fixed;
+        bottom:0;
+        background-color: #fcd12a;
+        margin-top: 10vh;   
+        padding-top: 3vh;
+        padding-left: 10vw;
+        padding-right: 10vw;
+        width: 100vw;
+        box-sizing: border-box;
+        height: 10vh;
+        color: #8D021F;
+        font-weight: bold;
+        border-top: #8D021F 3px solid;
+        
+
+        
+    }
+}
